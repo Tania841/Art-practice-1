@@ -1,51 +1,95 @@
-/* Стилизация заголовка */
-h1 {
-  color: #333;
-  font-size: 24px;
-  text-align: center;
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
-/* Стилизация контейнера для товаров */
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  justify-content: center;
+header {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Стилизация карточки товара */
-.card {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  text-align: center;
+header h1 {
+    font-family: 'Multiround Pro', cursive;
+    font-size: 2.5em;
+    margin: 0;
 }
 
-.card img {
-  width: 100%;
-  border-radius: 5px;
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-.card h2 {
-  font-size: 18px;
-  color: #333;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-.card p {
-  font-size: 14px;
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-/* Стилизация кнопки */
-.button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 5px;
+nav ul li a:hover {
+    color: #007BFF;
 }
 
-.button:hover {
-  background-color: #45a049;
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-family: 'Multiround Pro', cursive;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.course, .gallery img {
+    margin: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.course {
+    width: 45%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.gallery img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
