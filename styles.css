@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background: url('background.jpg') no-repeat center center fixed;
+    background: url('https://via.placeholder.com/1600x900.png?text=Background+Image') no-repeat center center fixed;
     background-size: cover;
     color: #333;
     margin: 0;
